@@ -1,0 +1,117 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  h1 {
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  #container {
+      position: absolute;
+      top: 0px; 
+      left: 0;
+      background:  rgb(0, 0, 0);
+      width: 100%;
+      height: 100%;
+  }
+  #canvas1 {
+    position: absolute;
+    top: 85px; 
+    left: 50px;
+    width: 88%;
+    height: 86%;
+    
+      
+  }
+  #audio1 {
+      width: 50%;
+      margin: 50px auto;
+      display: block;
+  }
+  #fileupload {
+    position: absolute;
+    top: 190px;
+    color: rgb(255, 255, 255);
+    z-index: 100;
+  }
+  footer, article {
+    font-family: 'Orbitron', sans-serif;
+    position: static;
+    width: 100%;
+    color: rgb(255, 0, 0);
+    font-size: 15px;
+    text-shadow: 1px 1px 1px #eeff00; 
+    background: rgba(0, 255, 255, 0.4);
+    background: rgb(255, 0, 234);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    padding-right: 20px;
+  }
+  footer a{
+    color: rgb(11, 255, 24);
+  }
+  body {
+    background: #ffffff;
+    font: normal 300 18px "Roboto", sans-serif;
+  }
+    
+#menu-nav {
+  max-width: 400px;
+  margin:  auto;
+  background-color: #003f4e;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+ 
+#navigation-bar ul {
+  border-radius: 4px;
+  overflow: hidden;
+}
+#navigation-bar li {
+  float: left;
+  width: 33%;
+  }
+  #navigation-bar li:hover a::before {
+    right: 0;
+    left: 0;
+  }
+  #navigation-bar a {
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px 0;
+    display: block;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  #navigation-bar a:hover {
+    color: #ffffff;
+  }
+  #navigation-bar a::before {
+    content: "";
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+    right: 100%;
+    left: 100%;
+    bottom: 0;
+    height: 2px;
+    background-color: #ffffff;
+  }
+  #navigation-bar a:hover::before {
+    right: 0;
+    left: 0;
+  }
+   
+  li {
+      list-style: none;
+  }

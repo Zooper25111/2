@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square</title>
+    <link rel="stylesheet" href="square.css">
+</head>
+<body>
+
+    <div id='container'>
+        <div id="menu-nav">
+            <div id="navigation-bar">
+              <ul>
+                <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
+                <li><a href="contact.html"><i class="fa fa-book"></i><span>Contact</span></a></li>
+                <li><a href="visualizers.html"><i class="fa fa-rss"></i> <span>Visualizers</span></a></li>
+              </ul>
+            </div>
+        </div>
+    
+        <canvas id="canvas1"></canvas>
+        
+        
+        <audio id="audio1" controls></audio>
+        
+        <input type='file' id='fileupload' accept='audio/*' />
+        <input accept='audio/*' type="button" value="Money -Pink Floyd" onclick="playMusic1()" id="musicButton" />
+
+</div>
+
+    <script src="square.js">
+    function search(){
+        var search = document.getElementById('search').value.toLowerCase();
+        var target = document.getElementById("list");
+        var list = target.getElementsByTagName('li');
+        for(var i=0; i < list.length; i++){
+            var text = list[i].innerHTML;
+            if(text.toLowerCase().indexOf(search) > -1){
+                list[i].style.display = "";
+            }else{
+                list[i].style.display = "none";
+            }
+        }
+    }</script>
+    
+</body>
+</html>
